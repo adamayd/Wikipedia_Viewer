@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Wikipedia Viewer</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="content-wrap">
+      <h1 class="searchTitle">S<span class="titleSpan">earch </span>W<span class="titleSpan">ikipedi</span>a</h1>
+      <img class="logo col-narrow" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Wikipedia-logo-en-big.png" alt="Wikipedia Logo">
+      <div class="col-wide">
+        <form id="searchForm">
+          <input type="search" class="form-control" name="search" id="search" placeholder="Search Wikipedia">
+          <button class="btn btn-default" type="submit">Submit</button>
+          <a href="https://en.wikipedia.org/wiki/Special:Random" class="btn btn-default" target="_blank">Are You Feeling Lucky?</a>
+          <button class="btn btn-danger" id="formReset" type="reset">Reset</button>
+        </form>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div id="results"></div>
+  </main>
+  <footer class="row content-wrap">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+      <p>&copy2017 &ltAA&gt Adam Ayd Development</p>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+      <a href="http://www.github.com/adamayd" target="_blank"><span><i class="fa fa-github"></i> adamayd</span></a>
+      <a href="http://www.twitter.com/adam_ayd" target="_blank"><span><i class="fa fa-twitter"></i> @adam_ayd</span></a>
+      <a href="http://www.linkedin.com/in/adam-ayd-528990136" target="_blank"><span><i class="fa fa-linkedin"></i> adamayd</span></a>
+    </div>
+  </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</html>
